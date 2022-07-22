@@ -110,3 +110,44 @@ footer a {
   /* overwriting 'a' margin to align the footer in the middle */
   margin: 0 16px;
 }
+
+@media (max-width: 1248px) {
+  body {
+    width: auto;
+    margin: 80px 64px 48px 64px;
+  }
+
+  h1, nav, footer {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 920px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin: 24px 0 0 0;
+  }
+  header img {
+    max-width: 300px;
+  }
+  header a {
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 660px) {
+  section {
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px 24px;
+  }
+  section h1,
+  section.project div.art,
+  section.project div.description,
+  section.about div.photo,
+  section.about div.description,
+  section.contact div.form {
+    grid-column: 1 / span 4;
+  }
+}
