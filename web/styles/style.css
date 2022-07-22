@@ -39,7 +39,7 @@ a {
   transition: color 0.3s;
 }
 
-a:hover {
+a:hover, a.selected {
   color: #F4BCBB;
 }
 
@@ -100,6 +100,10 @@ section.about h1 {
 
 section.about p {
   margin: 16px 0;
+}
+
+section.contact div.form {
+  grid-column: 4 / span 6;
 }
 
 footer a {
