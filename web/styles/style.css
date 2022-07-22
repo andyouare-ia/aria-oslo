@@ -41,6 +41,20 @@ footer {
   justify-content: center;
 }
 
+section {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 32px 32px;
+  /* background-color: grey; */
+}
+
+section h1 {
+  grid-column: 2 / span 10;
+  text-align: center;
+  line-height: 1.2;
+}
+
 footer a {
   /* overwriting 'a' margin to align the footer in the middle */
   margin: 0 16px;
