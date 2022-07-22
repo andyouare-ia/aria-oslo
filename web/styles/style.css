@@ -54,6 +54,7 @@ section {
   display: grid;
   grid-template-columns: repeat(12,1fr);
   gap: 32px 32px;
+  grid-auto-flow: dense;
 }
 
 section h1 {
@@ -62,12 +63,25 @@ section h1 {
   line-height: 1.2;
 }
 
-section.project img {
+section.project div.art {
   grid-column: 1 / span 8;
+  text-align: center;
 }
 
-section.project div {
+section.project div.description {
   grid-column: 9 / span 4;
+}
+
+section.project img {
+  max-height: 640px;
+}
+
+section.project-alt div.art {
+  grid-column: 5 / span 8;
+}
+
+section.project-alt div.description {
+  grid-column: 1 / span 4;
 }
 
 footer a {
