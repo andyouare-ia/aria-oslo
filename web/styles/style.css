@@ -84,6 +84,24 @@ section.project-alt div.description {
   grid-column: 1 / span 4;
 }
 
+section.about div.photo {
+  grid-column: 1 / span 6;
+}
+
+section.about div.description {
+  grid-column: 7 / span 6;
+}
+
+section.about h1 {
+  /* overwritting h1 in section */
+  margin: 0;
+  text-align: left;
+}
+
+section.about p {
+  margin: 16px 0;
+}
+
 footer a {
   /* overwriting 'a' margin to align the footer in the middle */
   margin: 0 16px;
