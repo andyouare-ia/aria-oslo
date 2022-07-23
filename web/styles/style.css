@@ -116,7 +116,6 @@ footer a {
     width: auto;
     margin: 80px 64px 48px 64px;
   }
-
   h1, nav, footer {
     font-size: 24px;
   }
@@ -138,9 +137,13 @@ footer a {
 }
 
 @media (max-width: 660px) {
+  nav a {
+    margin: 8px 0 0px 0;
+  }
   section {
     grid-template-columns: repeat(4,1fr);
     gap: 24px 24px;
+    margin: 56px 0;
   }
   section h1,
   section.project div.art,
@@ -149,5 +152,20 @@ footer a {
   section.about div.description,
   section.contact div.form {
     grid-column: 1 / span 4;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 48px 32px 32px 32px;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
