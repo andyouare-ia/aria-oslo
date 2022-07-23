@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Nunito+Sans&display=swap');
 
+/***************/
+/*** DESKTOP ***/
+/***************/
+
 body {
 	font-family: Nunito Sans;
 	font-size: 16px;
@@ -106,10 +110,41 @@ section.contact div.form {
   grid-column: 4 / span 6;
 }
 
+section.contact h1 {
+  text-align: left;
+}
+
 footer a {
   /* overwriting 'a' margin to align the footer in the middle */
   margin: 0 16px;
 }
+
+input, textarea {
+  width: 100%;
+  background-color: #111118;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+label {
+  display: block;
+  margin: 16px 0px;
+}
+
+button {
+  background-color: #F4BCBB;
+  border: none;
+  font-size: 24px;
+  font-family: Josefin Sans;
+  color: #111118;
+  padding: 8px 16px;
+}
+
+/***********************/
+/*** TABLET & MOBILE ***/
+/***********************/
 
 @media (max-width: 1248px) {
   body {
