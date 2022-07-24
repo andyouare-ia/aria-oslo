@@ -119,9 +119,29 @@ section.contact h1 {
   text-align: left;
 }
 
+section.new-layout img {
+  grid-column: 1 / span 12;
+}
+
+section.new-layout h2 {
+  grid-column: 1 / span 4;
+}
+
+section.new-layout div {
+  grid-column: 6 / span 7;
+}
+
 footer a {
   /* overwriting 'a' margin to align the footer in the middle */
   margin: 0 16px 0 16px;
+}
+
+a.social-icon {
+  border: none;
+}
+
+svg:hover path {
+  fill: #F4BCBB;
 }
 
 input, textarea {
@@ -192,6 +212,19 @@ button {
   section.about div.description,
   section.contact div.form {
     grid-column: 1 / span 4;
+  }
+  section.new-layout h2 {
+    grid-column: 1 / span 6;
+    margin: 0;
+  }
+  section.new-layout div {
+    grid-column: 1 / span 12;
+    margin: 0;
+  }
+  footer svg {
+    fill: #F4BCBB;
+    width: 30px;
+    height: auto;
   }
 }
 
