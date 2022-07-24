@@ -139,6 +139,14 @@ section.new-layout div {
   grid-column: 6 / span 7;
 }
 
+section.grid-layout div {
+  grid-column: span 6;
+}
+
+section.grid-layout h2 {
+  margin: 16px 0 16px 0;
+}
+
 footer a {
   /* overwriting 'a' margin to align the footer in the middle */
   margin: 0 16px 0 16px;
